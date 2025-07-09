@@ -119,9 +119,11 @@ export const MusicPlayerPage = () => {
             {/* Right Panel */}
             <div className="w-80 bg-gray-100 dark:bg-gray-800 rounded-xl shadow p-6 flex flex-col items-start relative overflow-hidden" style={{minHeight: '320px', minWidth: '320px'}}>
               <img src="https://images.pexels.com/photos/1707828/pexels-photo-1707828.jpeg?auto=compress&h=320&w=320" alt="Artist" className="absolute inset-0 w-full h-full object-cover" />
+              {/* Overlay for text readability */}
+              <div className="absolute inset-0 bg-black/30 dark:bg-black/60" />
               <div className="relative z-10 flex flex-col items-start w-full h-full p-6">
                 <div className="text-lg font-bold mb-1 text-gray-900 dark:text-white drop-shadow">Song Name</div>
-                <div className="text-gray-500 dark:text-gray-300 mb-2">Artist Name</div>
+                <div className="text-gray-700 dark:text-gray-300 mb-2">Artist Name</div>
                 <button className="bg-pink-500 text-white px-4 py-2 rounded-full font-semibold mb-4">Follow</button>
                 <div className="font-semibold mb-1 text-gray-900 dark:text-white">About the artist</div>
                 <div className="text-sm text-gray-700 dark:text-gray-200 mb-2">Artist Name<br/>8,534,613 monthly listeners</div>
